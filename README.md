@@ -6,8 +6,11 @@ Todas as questões abaixo devem ser respondidas utilizando regex.
 
 ```Maria foi ao Na Hora e recebeu seu novo CPF (772.843.809-34), porém, para confirmar o número do seu novo documento, foi pedido que na hora de digitar no sistema, que digitasse sem a pontuação, então ela digitou 77284380934.```
 
+console.log(texto.match(/\d{3}\.?\d{3}\.?\d{3}.?\d{2}/g))
+
 2) Encontre a data e hora no texto abaixo.
 ```O sistema vai parar para uma manutenção programada no dia 10/09/2020 às 23:00.```
+console.log(texto.match(/[\d\/]+[\d:]+/g))
 
 3) Escreva um regex que encontre o atributo href do link no html a seguir (somente o endereço).
 
@@ -21,7 +24,7 @@ Todas as questões abaixo devem ser respondidas utilizando regex.
     </ul>
 </html>
 ```
-
+console.log(texto.match(/\w+:\/\/\w+\.\w{3}/g))
 4) Encontre o texto dentro da tag h1 abaixo.
 
 ```html
@@ -43,3 +46,4 @@ Todas as questões abaixo devem ser respondidas utilizando regex.
     </table>
 </html>
 ```
+console.log(texto.match(/<h1>.+?<\/h1>/gi))
