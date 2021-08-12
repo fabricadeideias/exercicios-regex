@@ -9,7 +9,7 @@ Todas as questões abaixo devem ser respondidas utilizando regex.
 2) Encontre a data e hora no texto abaixo.
 ```O sistema vai parar para uma manutenção programada no dia 10/09/2020 às 23:00.```
 
-3) Escreva um regex que encontre o atributo href do link no html a seguir (somente o endereço).
+3) Escreva um regex que encontre o conteúdo do atributo href do link no html a seguir (somente o endereço).
 
 ```html
 <html>
